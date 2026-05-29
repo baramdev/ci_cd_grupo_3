@@ -25,6 +25,7 @@ jobs:
           USUARIO_ACTUAL: ${{ github.actor }}
         run: |
           echo " 1 autor: $USUARIO_ACTUAL "
+          echo " 1 autor: ${{ github.actor }} "
           echo "2 evento: ${{ github.event_name }}"
           echo "3 repo: ${{ github.repository }}"
           echo "4 ref: ${{ github.ref_name }}"
