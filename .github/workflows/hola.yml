@@ -41,6 +41,14 @@ jobs:
         if: github.event_name == 'pull_request' && github.ref == 'refs/heads/main'
         run: echo "evento pull request activado hacia main."
 
+      - name: se ejecuta cuando el paso anterior falla
+        if: failure()
+        run: echo "el paso anterior fallo 🚩"
+
+      - name: se ejecuta siempre
+        if: always()
+        run: echo "se ejecuta siempre ✅"
+
 
           
         
