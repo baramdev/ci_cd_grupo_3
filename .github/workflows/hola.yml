@@ -15,4 +15,4 @@ jobs:
         
       - name: mostrar perfil
         run: | 
-          echo " author: $ {{ github.actor }} "
+          echo " author: ${{ github.actor }} "
