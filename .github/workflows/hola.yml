@@ -13,6 +13,6 @@ jobs:
       - name: mostrar saludo
         run: echo "Hola desde la terminal."
         
-      - name: mostrat perfil
+      - name: mostrar perfil
         run: | 
-          echo "author: $ {{ github.actor}}."
+          echo " author: $ {{ github.actor }} "
