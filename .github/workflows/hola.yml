@@ -12,3 +12,7 @@ jobs:
     steps:
       - name: mostrar saludo
         run: echo "Hola desde la terminal."
+        
+      - name: mostrat perfil
+        run: | 
+          echo "author: $ {{ github.actor}}."
